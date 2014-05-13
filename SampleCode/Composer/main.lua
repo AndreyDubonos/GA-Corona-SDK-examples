@@ -16,9 +16,6 @@ composer.gotoScene( "scene1", "fade", 300 )
 -- you setup composer and call composer.gotoScene
 ---------------------------------------------------------------------------------
 
--- If iOS and no ads in the app then you should set the GA.iosIdentifierForVendor property to true.
-GA.iosIdentifierForVendor = false
-
 GA.isDebug = true
 GA.runInSimulator = true
 
