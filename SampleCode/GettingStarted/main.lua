@@ -13,6 +13,7 @@ local GA = require "plugin.gameanalytics"
 
 GA.isDebug                  = true
 GA.runInSimulator           = true
+GA.submitSystemInfo         = true
 
 -- Initialize GA
 GA.init ({

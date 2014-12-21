@@ -5,6 +5,14 @@ settings = {
 		default = "landscape",
 		supported = { "landscapeRight", "landscapeLeft" }
 	},
+
+	plugins =
+	{
+		["plugin.gameanalytics"] =
+		{
+			publisherId = "com.gameanalytics",
+		},
+	},
 	
 	iphone =
 	{
@@ -21,11 +29,13 @@ settings = {
 		},
 	},
 
-	plugins =
-	{
-		["plugin.gameanalytics"] =
-		{
-			publisherId = "com.gameanalytics",
-		},
-	},
+	android =
+    {
+        versionCode = "1",
+        usesPermissions =
+        {
+        	"android.permission.INTERNET",
+            "android.permission.ACCESS_NETWORK_STATE"
+        },
+    },
 }
