@@ -12,6 +12,12 @@ settings = {
 		{
 			publisherId = "com.gameanalytics",
 		},
+
+		-- GameAnalytics uses the advertisingId plugin
+		["plugin.advertisingId"] =
+        {
+            publisherId = "com.coronalabs"
+        },
 	},
 	
 	iphone =
