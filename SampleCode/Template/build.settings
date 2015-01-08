@@ -5,6 +5,20 @@ settings = {
 		default = "landscape",
 		supported = { "landscapeRight", "landscapeLeft" }
 	},
+
+	plugins =
+	{
+		["plugin.gameanalytics"] =
+		{
+			publisherId = "com.gameanalytics",
+		},
+
+		-- GameAnalytics uses the advertisingId plugin
+		["plugin.advertisingId"] =
+        	{
+            		publisherId = "com.coronalabs"
+        	},
+	},
 	
 	iphone =
 	{
@@ -21,11 +35,13 @@ settings = {
 		},
 	},
 
-	plugins =
-	{
-		["plugin.gameanalytics"] =
-		{
-			publisherId = "com.gameanalytics",
-		},
-	},
+	android =
+    {
+        versionCode = "1",
+        usesPermissions =
+        {
+        	"android.permission.INTERNET",
+        	"android.permission.ACCESS_NETWORK_STATE"
+        },
+    },
 }
